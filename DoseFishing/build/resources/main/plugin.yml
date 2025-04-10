@@ -1,0 +1,14 @@
+name: DoseFishing
+version: '1.0'
+main: kr.antos112.dosefishing.DoseFishing
+author: Antos112
+api-version: '1.21'
+commands:
+  낚시상점관리:
+    permission: kr.dosefishing.manager
+    permission-message: "§c해당 명령어를 실행할 권한이 없습니다"
+
+permissions:
+  kr.dosefishing.manager:
+    description: "§7낚시상점관리 명령어 펄미션"
+    default: op

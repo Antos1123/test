@@ -1,0 +1,8 @@
+Warning-Event:
+  Kick:
+    Type: WARNING_3
+    execution:
+      - message{m="warning exceeded"}
+      - randomNum >= 96 @cast:message{m="You are so lucky!"}
+    variables:
+      - randomNum = random(0,100)

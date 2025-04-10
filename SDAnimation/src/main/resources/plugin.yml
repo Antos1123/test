@@ -1,0 +1,18 @@
+name: SDAnimation
+version: '1.2'
+main: kr.antos112.animation.SDAnimation
+api-version: '1.20'
+commands:
+  교문:
+    aliases:
+      - classdoor
+      - cd
+      - ryans
+    permission: schooldoor.animation
+
+permissions:
+  schooldoor.animation:
+    default: op
+
+depend:
+  - ItemsAdder

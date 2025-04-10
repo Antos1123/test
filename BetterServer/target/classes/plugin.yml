@@ -1,0 +1,53 @@
+name: "BetterServer"
+version: '1.0'
+main: com.antos.betterserver.BetterServer
+api-version: '1.20'
+author: antos112
+commands:
+  AntosPlugin:
+    permission: AntosPlugin.check
+    aliases:
+      - ap
+      - apl
+      - antospl
+  mute:
+    permission: BetterServer.mute.*
+    aliases:
+      - m
+      - abxm
+      - 뮤트
+  bl:
+    aliases:
+      - betterlang
+
+  warning:
+    aliases:
+      - wi
+      - 경고
+      - rudrh
+
+softdepend:
+  - Vault
+  - Skript
+
+
+permissions:
+  AntosPlugin.check:
+    description: "AntosPluginList Check Permission"
+    default: op
+  BetterServer.mute.*:
+    default: op
+  BetterServer.warning.*:
+    default: op
+    description: "use all BetterServer warning System"
+    children:
+      BetterServer.warning.admin: true
+  BetterServer.warning.admin:
+    description: "use all BetterServer warning System"
+    children:
+      BetterServer.warning.add: true
+      BetterServer.warning.subtract: true
+      BetterServer.warning.function: true
+      BetterServer.warning.check: true
+      BetterServer.warning.set: true
+      BetterServer.warning.reload: true

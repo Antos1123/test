@@ -1,0 +1,4 @@
+BetterServer:
+  update-checker: true
+  default-lang: default-english
+  console-debug: true
