@@ -1,0 +1,36 @@
+name: Instruments-Custom
+version: '1.0'
+main: net.cupofcode.instruments.Instruments
+api-version: '1.21'
+authors: [ (Custom)antos112 ]
+description: Instruments Plugin Upgrade Version
+softdepend:
+  - WorldEdit, WorldGuard
+depend: [ProtocolLib]
+commands:
+  instruments:
+    description: all commands related to Instruments
+    aliases:
+      - 악기
+    permission: instruments.use
+
+permissions:
+  instruments.system.*:
+    default: op
+    children:
+      - instruments.use
+      - instruments.list
+      - instruments.reload
+      - instruments.give
+
+  instruments.use:
+    default: op
+
+  instruments.list:
+    default: op
+
+  instruments.reload:
+    default: op
+
+  instruments.give:
+    default: op
